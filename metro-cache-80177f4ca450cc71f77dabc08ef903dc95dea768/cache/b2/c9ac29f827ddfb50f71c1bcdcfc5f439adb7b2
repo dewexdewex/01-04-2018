@@ -82,7 +82,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }
               },
               _react3.default.createElement(_nativeBase.Icon, {
-                name: "ios-person",
+                name: "ios-person-outline",
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 10
@@ -137,7 +137,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }
               },
               _react3.default.createElement(_nativeBase.Icon, {
-                name: "ios-notifications",
+                name: "ios-notifications-outline",
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 19

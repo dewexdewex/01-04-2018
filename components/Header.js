@@ -7,7 +7,7 @@ export default class MyHeader extends React.Component {
       <Header>
         <Left>
           <Button transparent>
-            <Icon name='ios-person' />
+            <Icon name='ios-person-outline' />
           </Button>
         </Left>
         <Body>
@@ -16,7 +16,7 @@ export default class MyHeader extends React.Component {
         </Body>            
         <Right>
           <Button transparent>
-            <Icon name='ios-notifications' />
+            <Icon name='ios-notifications-outline' />
           </Button>
         </Right>
       </Header> 

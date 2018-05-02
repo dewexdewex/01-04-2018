@@ -45,6 +45,26 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   var _Footer2 = _interopRequireDefault(_Footer);
 
+  var _TransactionLogo = _require(_dependencyMap[11], "./components/accounts/transactions/TransactionLogo");
+
+  var _TransactionLogo2 = _interopRequireDefault(_TransactionLogo);
+
+  var _TransactionMerchant = _require(_dependencyMap[12], "./components/accounts/transactions/TransactionMerchant");
+
+  var _TransactionMerchant2 = _interopRequireDefault(_TransactionMerchant);
+
+  var _TransactionValue = _require(_dependencyMap[13], "./components/accounts/transactions/TransactionValue");
+
+  var _TransactionValue2 = _interopRequireDefault(_TransactionValue);
+
+  var _TransactionDate = _require(_dependencyMap[14], "./components/accounts/transactions/TransactionDate");
+
+  var _TransactionDate2 = _interopRequireDefault(_TransactionDate);
+
+  var _TransactionBalance = _require(_dependencyMap[15], "./components/accounts/transactions/TransactionBalance");
+
+  var _TransactionBalance2 = _interopRequireDefault(_TransactionBalance);
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -95,9 +115,9 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               case 0:
                 _context.next = 2;
                 return regeneratorRuntime.awrap(_expo2.default.Font.loadAsync({
-                  Roboto: _require(_dependencyMap[11], "native-base/Fonts/Roboto.ttf"),
-                  Roboto_medium: _require(_dependencyMap[12], "native-base/Fonts/Roboto_medium.ttf"),
-                  Ionicons: _require(_dependencyMap[13], "@expo/vector-icons/fonts/Ionicons.ttf")
+                  Roboto: _require(_dependencyMap[16], "native-base/Fonts/Roboto.ttf"),
+                  Roboto_medium: _require(_dependencyMap[17], "native-base/Fonts/Roboto_medium.ttf"),
+                  Ionicons: _require(_dependencyMap[18], "@expo/vector-icons/fonts/Ionicons.ttf")
                 }));
 
               case 2:
@@ -119,7 +139,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
           return _react3.default.createElement(_expo2.default.AppLoading, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 29
+              lineNumber: 35
             }
           });
         }
@@ -130,7 +150,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             style: (0, _components3.default)(_material2.default),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 32
+              lineNumber: 38
             }
           },
           _react3.default.createElement(
@@ -141,20 +161,20 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 33
+                lineNumber: 39
               }
             },
             _react3.default.createElement(_reactNative.StatusBar, {
               hidden: false,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 34
+                lineNumber: 40
               }
             }),
             _react3.default.createElement(_Header2.default, {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 35
+                lineNumber: 41
               }
             }),
             _react3.default.createElement(
@@ -165,20 +185,144 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 37
+                  lineNumber: 43
                 }
               },
-              _react3.default.createElement(_Card2.default, {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 38
-                }
-              })
+              _react3.default.createElement(
+                _reactNative.View,
+                {
+                  style: styles.transaction,
+                  accessible: true,
+                  accessibilityLabel: 'A debit card payment to Co-op, of five pounds and forty-seven pence, made on the third of november twenty-seventeen.  Rolling balance of, thirty-four pounds and fifty-six pence.',
+                  accessibilityTraits: 'button',
+                  accessibilityHint: 'Double tap to hear more details about this transaction.',
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 44
+                  }
+                },
+                _react3.default.createElement(
+                  _reactNative.View,
+                  {
+                    style: styles.leftBit,
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 52
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                      style: styles.transactionLogo,
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 54
+                      }
+                    },
+                    _react3.default.createElement(_TransactionLogo2.default, {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 55
+                      }
+                    })
+                  ),
+                  _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 59
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.View,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 60
+                        }
+                      },
+                      _react3.default.createElement(_TransactionMerchant2.default, {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 61
+                        }
+                      })
+                    ),
+                    _react3.default.createElement(
+                      _reactNative.View,
+                      {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 64
+                        }
+                      },
+                      _react3.default.createElement(_TransactionDate2.default, {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 65
+                        }
+                      })
+                    )
+                  )
+                ),
+                _react3.default.createElement(
+                  _reactNative.View,
+                  {
+                    style: styles.rightBit,
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 71
+                    }
+                  },
+                  _react3.default.createElement(
+                    _reactNative.View,
+                    {
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 72
+                      }
+                    },
+                    _react3.default.createElement(
+                      _reactNative.View,
+                      {
+                        style: styles.transactionValue,
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 73
+                        }
+                      },
+                      _react3.default.createElement(_TransactionValue2.default, {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 74
+                        }
+                      })
+                    ),
+                    _react3.default.createElement(
+                      _reactNative.View,
+                      {
+                        style: styles.TransactionBalance,
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 76
+                        }
+                      },
+                      _react3.default.createElement(_TransactionBalance2.default, {
+                        __source: {
+                          fileName: _jsxFileName,
+                          lineNumber: 77
+                        }
+                      })
+                    )
+                  )
+                )
+              )
             ),
             _react3.default.createElement(_Footer2.default, {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 40
+                lineNumber: 85
               }
             })
           )
@@ -190,4 +334,31 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   }(_react3.default.Component));
 
   exports.default = App;
+
+  var styles = _reactNative.StyleSheet.create({
+    transaction: {
+      flexDirection: 'row',
+      height: 44,
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
+      backgroundColor: '#FFF',
+      marginTop: 2
+    },
+    leftBit: {
+      flex: 2,
+      flexDirection: 'row',
+      height: 44,
+      borderBottomWidth: 0.5,
+      borderBottomColor: '#CCC',
+      justifyContent: 'flex-start'
+    },
+    rightBit: {
+      flex: 1,
+      alignItems: 'flex-end',
+      height: 44,
+      borderBottomWidth: 0.5,
+      borderBottomColor: '#CCC',
+      justifyContent: 'flex-start'
+    }
+  });
 });

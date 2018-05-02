@@ -1,0 +1,247 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _react2 = _require(_dependencyMap[0], "react");
+
+  var _react3 = _interopRequireDefault(_react2);
+
+  var _index = _require(_dependencyMap[1], "./../../../node_modules/react-transform-hmr/lib/index.js");
+
+  var _index2 = _interopRequireDefault(_index);
+
+  var _jsxFileName = "/Users/dewex/Documents/apps/D2M/01-04-2018/components/accounts/transactions/Transaction.js";
+
+  var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+  var _reactNative = _require(_dependencyMap[2], "react-native");
+
+  var _TransactionLogo = _require(_dependencyMap[3], "./TransactionLogo");
+
+  var _TransactionLogo2 = _interopRequireDefault(_TransactionLogo);
+
+  var _TransactionMerchant = _require(_dependencyMap[4], "./TransactionMerchant");
+
+  var _TransactionMerchant2 = _interopRequireDefault(_TransactionMerchant);
+
+  var _TransactionValue = _require(_dependencyMap[5], "./TransactionValue");
+
+  var _TransactionValue2 = _interopRequireDefault(_TransactionValue);
+
+  var _TransactionBalance = _require(_dependencyMap[6], "./TransactionBalance");
+
+  var _TransactionBalance2 = _interopRequireDefault(_TransactionBalance);
+
+  var _TransactionDate = _require(_dependencyMap[7], "./TransactionDate");
+
+  var _TransactionDate2 = _interopRequireDefault(_TransactionDate);
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _components = {
+    Transaction: {
+      displayName: "Transaction"
+    }
+  };
+
+  var _node_modulesReactTransformHmrLibIndexJs2 = (0, _index2.default)({
+    filename: "/Users/dewex/Documents/apps/D2M/01-04-2018/components/accounts/transactions/Transaction.js",
+    components: _components,
+    locals: [module],
+    imports: [_react3.default]
+  });
+
+  function _wrapComponent(id) {
+    return function (Component) {
+      return _node_modulesReactTransformHmrLibIndexJs2(Component, id);
+    };
+  }
+
+  var Transaction = _wrapComponent("Transaction")(function (_React$Component) {
+    _inherits(Transaction, _React$Component);
+
+    function Transaction() {
+      _classCallCheck(this, Transaction);
+
+      return _possibleConstructorReturn(this, (Transaction.__proto__ || Object.getPrototypeOf(Transaction)).apply(this, arguments));
+    }
+
+    _createClass(Transaction, [{
+      key: "render",
+      value: function render() {
+        return _react3.default.createElement(
+          _reactNative.View,
+          {
+            style: styles.transaction,
+            accessible: true,
+            accessibilityLabel: 'A debit card payment to Co-op, of five pounds and forty-seven pence, made on the third of november twenty-seventeen.  Rolling balance of, thirty-four pounds and fifty-six pence.',
+            accessibilityTraits: 'button',
+            accessibilityHint: 'Double tap to hear more details about this transaction.',
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 14
+            }
+          },
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: styles.leftBit,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 22
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                style: styles.transactionLogo,
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 24
+                }
+              },
+              _react3.default.createElement(_TransactionLogo2.default, {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 25
+                }
+              })
+            ),
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 29
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.View,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 30
+                  }
+                },
+                _react3.default.createElement(_TransactionMerchant2.default, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 31
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 34
+                  }
+                },
+                _react3.default.createElement(_TransactionDate2.default, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 35
+                  }
+                })
+              )
+            )
+          ),
+          _react3.default.createElement(
+            _reactNative.View,
+            {
+              style: styles.rightBit,
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 41
+              }
+            },
+            _react3.default.createElement(
+              _reactNative.View,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 42
+                }
+              },
+              _react3.default.createElement(
+                _reactNative.View,
+                {
+                  style: styles.transactionValue,
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 43
+                  }
+                },
+                _react3.default.createElement(_TransactionValue2.default, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 44
+                  }
+                })
+              ),
+              _react3.default.createElement(
+                _reactNative.View,
+                {
+                  style: styles.TransactionBalance,
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 46
+                  }
+                },
+                _react3.default.createElement(_TransactionBalance2.default, {
+                  __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 47
+                  }
+                })
+              )
+            )
+          )
+        );
+      }
+    }]);
+
+    return Transaction;
+  }(_react3.default.Component));
+
+  exports.default = Transaction;
+
+  var styles = _reactNative.StyleSheet.create({
+    transaction: {
+      flexDirection: 'row',
+      height: 44,
+      justifyContent: 'flex-start',
+      alignItems: 'flex-start',
+      backgroundColor: '#FFF',
+      marginTop: 2
+    },
+    leftBit: {
+      flex: 2,
+      flexDirection: 'row',
+      height: 44,
+      borderBottomWidth: 0.5,
+      borderBottomColor: '#CCC',
+      justifyContent: 'flex-start'
+    },
+    rightBit: {
+      flex: 1,
+      alignItems: 'flex-end',
+      height: 44,
+      borderBottomWidth: 0.5,
+      borderBottomColor: '#CCC',
+      justifyContent: 'flex-start'
+    }
+  });
+
+  var converter = _require(_dependencyMap[8], "number-to-words");
+
+  converter.toWords(13);
+});

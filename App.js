@@ -1,10 +1,13 @@
 import React from "react";
 import { StatusBar, Image, View } from "react-native";
-import { Content, Card, CardItem, Container, Header, Left, Body, Center, Right, Button, Icon, Title, Text, StyleProvider, Subtitle } from "native-base";
+import { Content, Card, CardItem, Container, Body, Text, StyleProvider } from "native-base";
 import getTheme from './native-base-theme/components';
 import material from './native-base-theme/variables/material';
 import { Col, Row, Grid } from 'react-native-easy-grid';
 import Expo from "expo";
+import MyHeader from './components/Header';
+import MyCard from './components/Card';
+import MyFooter from './components/Footer';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -29,46 +32,12 @@ export default class App extends React.Component {
       <StyleProvider style={getTheme(material)}>
         <Container style={{paddingTop: Expo.Constants.statusBarHeight}}>
           <StatusBar hidden={false} />
-          <Header>
-            <Left>
-              <Button transparent>
-                <Icon name='arrow-back' />
-              </Button>
-            </Left>
-            <Body>
-              <Title>Transactions</Title>
-              <Subtitle>Current account</Subtitle>
-            </Body>
-            
-            <Right>
-              <Button transparent>
-                <Icon name='more' />
-              </Button>
-            </Right>
-          </Header>
+          <MyHeader />
           
           <Content style={{padding: 10}}>
-            <Card>
-              <CardItem header>
-                <Text>This is a card</Text>
-              </CardItem>
-              <CardItem>
-                <Body>
-                  <Text style={{paddingBottom: 10}}>
-                    Helios is an Adobe AEM CMS global platform behind the Renault, Nissan and Infiniti brands' public facing responsive web sites.
-                  </Text>
-                  <Image source={require('./img/logo.png')} />
-                  <Text style={{paddingBottom: 10}}>
-                    I was engaged by Renault to help drive clientside UX change on the Helios project, directly and with the Agency UX team, to improve the site's market ranking in benchmark customer surveys.
-                  </Text>
-                </Body>
-              </CardItem>
-              <CardItem footer>
-                <Text>Yours, David</Text>
-              </CardItem>
-           </Card>
+            <MyCard />
           </Content>
-          
+          <MyFooter />
 
         </Container>
       </StyleProvider>

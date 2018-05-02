@@ -33,6 +33,18 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   var _expo2 = _interopRequireDefault(_expo);
 
+  var _Header = _require(_dependencyMap[8], "./components/Header");
+
+  var _Header2 = _interopRequireDefault(_Header);
+
+  var _Card = _require(_dependencyMap[9], "./components/Card");
+
+  var _Card2 = _interopRequireDefault(_Card);
+
+  var _Footer = _require(_dependencyMap[10], "./components/Footer");
+
+  var _Footer2 = _interopRequireDefault(_Footer);
+
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -83,9 +95,9 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               case 0:
                 _context.next = 2;
                 return regeneratorRuntime.awrap(_expo2.default.Font.loadAsync({
-                  Roboto: _require(_dependencyMap[8], "native-base/Fonts/Roboto.ttf"),
-                  Roboto_medium: _require(_dependencyMap[9], "native-base/Fonts/Roboto_medium.ttf"),
-                  Ionicons: _require(_dependencyMap[10], "@expo/vector-icons/fonts/Ionicons.ttf")
+                  Roboto: _require(_dependencyMap[11], "native-base/Fonts/Roboto.ttf"),
+                  Roboto_medium: _require(_dependencyMap[12], "native-base/Fonts/Roboto_medium.ttf"),
+                  Ionicons: _require(_dependencyMap[13], "@expo/vector-icons/fonts/Ionicons.ttf")
                 }));
 
               case 2:
@@ -107,7 +119,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
           return _react3.default.createElement(_expo2.default.AppLoading, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 26
+              lineNumber: 29
             }
           });
         }
@@ -118,7 +130,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             style: (0, _components3.default)(_material2.default),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 29
+              lineNumber: 32
             }
           },
           _react3.default.createElement(
@@ -129,106 +141,22 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 30
+                lineNumber: 33
               }
             },
             _react3.default.createElement(_reactNative.StatusBar, {
               hidden: false,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 31
+                lineNumber: 34
               }
             }),
-            _react3.default.createElement(
-              _nativeBase.Header,
-              {
-                __source: {
-                  fileName: _jsxFileName,
-                  lineNumber: 32
-                }
-              },
-              _react3.default.createElement(
-                _nativeBase.Left,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 33
-                  }
-                },
-                _react3.default.createElement(
-                  _nativeBase.Button,
-                  {
-                    transparent: true,
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 34
-                    }
-                  },
-                  _react3.default.createElement(_nativeBase.Icon, {
-                    name: "arrow-back",
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 35
-                    }
-                  })
-                )
-              ),
-              _react3.default.createElement(
-                _nativeBase.Body,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 38
-                  }
-                },
-                _react3.default.createElement(
-                  _nativeBase.Title,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 39
-                    }
-                  },
-                  "Transactions"
-                ),
-                _react3.default.createElement(
-                  _nativeBase.Subtitle,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 40
-                    }
-                  },
-                  "Current account"
-                )
-              ),
-              _react3.default.createElement(
-                _nativeBase.Right,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 43
-                  }
-                },
-                _react3.default.createElement(
-                  _nativeBase.Button,
-                  {
-                    transparent: true,
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 44
-                    }
-                  },
-                  _react3.default.createElement(_nativeBase.Icon, {
-                    name: "more",
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 45
-                    }
-                  })
-                )
-              )
-            ),
+            _react3.default.createElement(_Header2.default, {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 35
+              }
+            }),
             _react3.default.createElement(
               _nativeBase.Content,
               {
@@ -237,110 +165,22 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 },
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 50
+                  lineNumber: 37
                 }
               },
-              _react3.default.createElement(
-                _nativeBase.Card,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 51
-                  }
-                },
-                _react3.default.createElement(
-                  _nativeBase.CardItem,
-                  {
-                    header: true,
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 52
-                    }
-                  },
-                  _react3.default.createElement(
-                    _nativeBase.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 53
-                      }
-                    },
-                    "This is a card"
-                  )
-                ),
-                _react3.default.createElement(
-                  _nativeBase.CardItem,
-                  {
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 55
-                    }
-                  },
-                  _react3.default.createElement(
-                    _nativeBase.Body,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 56
-                      }
-                    },
-                    _react3.default.createElement(
-                      _nativeBase.Text,
-                      {
-                        style: {
-                          paddingBottom: 10
-                        },
-                        __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 57
-                        }
-                      },
-                      "Helios is an Adobe AEM CMS global platform behind the Renault, Nissan and Infiniti brands' public facing responsive web sites."
-                    ),
-                    _react3.default.createElement(_reactNative.Image, {
-                      source: _require(_dependencyMap[11], './img/logo.png'),
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 60
-                      }
-                    }),
-                    _react3.default.createElement(
-                      _nativeBase.Text,
-                      {
-                        style: {
-                          paddingBottom: 10
-                        },
-                        __source: {
-                          fileName: _jsxFileName,
-                          lineNumber: 61
-                        }
-                      },
-                      "I was engaged by Renault to help drive clientside UX change on the Helios project, directly and with the Agency UX team, to improve the site's market ranking in benchmark customer surveys."
-                    )
-                  )
-                ),
-                _react3.default.createElement(
-                  _nativeBase.CardItem,
-                  {
-                    footer: true,
-                    __source: {
-                      fileName: _jsxFileName,
-                      lineNumber: 66
-                    }
-                  },
-                  _react3.default.createElement(
-                    _nativeBase.Text,
-                    {
-                      __source: {
-                        fileName: _jsxFileName,
-                        lineNumber: 67
-                      }
-                    },
-                    "Yours, David"
-                  )
-                )
-              )
-            )
+              _react3.default.createElement(_Card2.default, {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 38
+                }
+              })
+            ),
+            _react3.default.createElement(_Footer2.default, {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 40
+              }
+            })
           )
         );
       }

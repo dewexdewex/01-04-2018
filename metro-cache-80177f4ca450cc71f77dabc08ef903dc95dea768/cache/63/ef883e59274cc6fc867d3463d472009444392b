@@ -1,0 +1,11 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+	module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+		"__packager_asset": true,
+		"httpServerLocation": "/assets/node_modules/native-base/Fonts",
+		"scales": [1],
+		"hash": "65834a08da7a4c7bc58d7563fc3f9e99",
+		"name": "CoopBank",
+		"type": "ttf",
+		"fileHashes": ["65834a08da7a4c7bc58d7563fc3f9e99"]
+	});
+});

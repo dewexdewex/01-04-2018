@@ -23,25 +23,17 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _reactNative = _require(_dependencyMap[2], "react-native");
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[3], "../lib/createReactNativeComponentClass");
+    var _attributes = _require(_dependencyMap[3], "../lib/attributes");
 
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _props = _require(_dependencyMap[4], "../lib/props");
 
-    var _attributes = _require(_dependencyMap[4], "../lib/attributes");
-
-    var _props = _require(_dependencyMap[5], "../lib/props");
-
-    var _Shape2 = _require(_dependencyMap[6], "./Shape");
+    var _Shape2 = _require(_dependencyMap[5], "./Shape");
 
     var _Shape3 = _interopRequireDefault(_Shape2);
 
-    var _resolveAssetSource = _require(_dependencyMap[7], "react-native/Libraries/Image/resolveAssetSource");
+    var _extractViewBox = _require(_dependencyMap[6], "../lib/extract/extractViewBox");
 
-    var _resolveAssetSource2 = _interopRequireDefault(_resolveAssetSource);
-
-    var _extractViewBox = _require(_dependencyMap[8], "../lib/extract/extractViewBox");
-
-    var _extractProps = _require(_dependencyMap[9], "../lib/extract/extractProps");
+    var _extractProps = _require(_dependencyMap[7], "../lib/extract/extractProps");
 
     var _extractProps2 = _interopRequireDefault(_extractProps);
 
@@ -80,7 +72,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 var props = this.props;
                 var modes = props.preserveAspectRatio.trim().split(spacesRegExp);
                 var meetOrSlice = _extractViewBox.meetOrSliceTypes[modes[1]] || 0;
-                var align = _extractViewBox.alignEnum[modes[0]] || 'xMidYMid';
+                var align = _extractViewBox.alignEnum[modes[0]] || "xMidYMid";
                 return _react2.default.createElement(RNSVGImage, _extends({
                     ref: function ref(ele) {
                         _this2.root = ele;
@@ -95,17 +87,17 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     height: props.height.toString(),
                     meetOrSlice: meetOrSlice,
                     align: align,
-                    src: (0, _resolveAssetSource2.default)(props.href),
+                    src: _reactNative.Image.resolveAssetSource(props.href),
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 46
+                        lineNumber: 45
                     }
                 }));
             }
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'Image', _class.propTypes = _extends({}, _props.responderProps, _props.touchableProps, {
+    }(_Shape3.default), _class.displayName = "Image", _class.propTypes = _extends({}, _props.responderProps, _props.touchableProps, {
         x: _props.numberProp,
         y: _props.numberProp,
         width: _props.numberProp.isRequired,
@@ -117,7 +109,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         y: 0,
         width: 0,
         height: 0,
-        preserveAspectRatio: 'xMidYMid meet'
+        preserveAspectRatio: "xMidYMid meet"
     }, _initialiseProps = function _initialiseProps() {
         var _this3 = this;
 
@@ -129,10 +121,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }, _temp2);
 
     exports.default = _default;
-    var RNSVGImage = (0, _createReactNativeComponentClass2.default)('RNSVGImage', function () {
-        return {
-            validAttributes: _attributes.ImageAttributes,
-            uiViewClassName: 'RNSVGImage'
-        };
+    var RNSVGImage = (0, _reactNative.requireNativeComponent)("RNSVGImage", null, {
+        nativeOnly: _attributes.ImageAttributes
     });
 });

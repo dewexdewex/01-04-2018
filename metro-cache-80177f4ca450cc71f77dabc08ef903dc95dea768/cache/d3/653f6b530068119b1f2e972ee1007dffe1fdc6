@@ -13,7 +13,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         var strokeWidth = props.strokeWidth,
             strokeDasharray = props.strokeDasharray;
 
-        if (!strokeDasharray || strokeDasharray === 'none') {
+        if (!strokeDasharray || strokeDasharray === "none") {
             strokeDasharray = null;
         } else {
             strokeDasharray = (0, _extractLengthList2.default)(strokeDasharray);
@@ -23,7 +23,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             }
         }
 
-        if (!strokeWidth || typeof strokeWidth !== 'string') {
+        if (!strokeWidth || typeof strokeWidth !== "string") {
             strokeWidth = "" + (strokeWidth || 1);
         }
 

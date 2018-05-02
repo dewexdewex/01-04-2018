@@ -29,9 +29,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _extractGradient2 = _interopRequireDefault(_extractGradient);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[5], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[5], "react-native");
 
     var _attributes = _require(_dependencyMap[6], "../lib/attributes");
 
@@ -83,14 +81,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }, (0, _extractGradient2.default)(this.props), {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 32
+                        lineNumber: 33
                     }
                 }));
             }
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'RadialGradient', _class.propTypes = {
+    }(_react2.Component), _class.displayName = "RadialGradient", _class.propTypes = {
         fx: _props.numberProp.isRequired,
         fy: _props.numberProp.isRequired,
         rx: _props.numberProp,
@@ -98,21 +96,18 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         cx: _props.numberProp.isRequired,
         cy: _props.numberProp.isRequired,
         r: _props.numberProp,
-        gradientUnits: _propTypes2.default.oneOf(['objectBoundingBox', 'userSpaceOnUse']),
+        gradientUnits: _propTypes2.default.oneOf(["objectBoundingBox", "userSpaceOnUse"]),
         id: _propTypes2.default.string.isRequired
     }, _class.defaultProps = {
-        fx: '50%',
-        fy: '50%',
-        cx: '50%',
-        cy: '50%',
-        r: '50%'
+        fx: "50%",
+        fy: "50%",
+        cx: "50%",
+        cy: "50%",
+        r: "50%"
     }, _temp));
 
     exports.default = _component;
-    var RNSVGRadialGradient = (0, _createReactNativeComponentClass2.default)('RNSVGRadialGradient', function () {
-        return {
-            validAttributes: _attributes.RadialGradientAttributes,
-            uiViewClassName: 'RNSVGRadialGradient'
-        };
+    var RNSVGRadialGradient = (0, _reactNative.requireNativeComponent)("RNSVGRadialGradient", null, {
+        nativeOnly: _attributes.RadialGradientAttributes
     });
 });

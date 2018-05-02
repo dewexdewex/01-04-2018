@@ -27,9 +27,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _extractViewBox2 = _interopRequireDefault(_extractViewBox);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[4], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[4], "react-native");
 
     var _attributes = _require(_dependencyMap[5], "../lib/attributes");
 
@@ -78,7 +76,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     }, (0, _extractViewBox2.default)(props), {
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 17
+                            lineNumber: 18
                         }
                     }),
                     props.children
@@ -87,17 +85,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'Symbol', _class.propTypes = {
+    }(_react2.Component), _class.displayName = "Symbol", _class.propTypes = {
         id: _propTypes2.default.string.isRequired,
         viewBox: _propTypes2.default.string,
         preserveAspectRatio: _propTypes2.default.string
     }, _temp));
 
     exports.default = _component;
-    var RNSVGSymbol = (0, _createReactNativeComponentClass2.default)('RNSVGSymbol', function () {
-        return {
-            validAttributes: _attributes.SymbolAttributes,
-            uiViewClassName: 'RNSVGSymbol'
-        };
+    var RNSVGSymbol = (0, _reactNative.requireNativeComponent)("RNSVGSymbol", null, {
+        nativeOnly: _attributes.SymbolAttributes
     });
 });

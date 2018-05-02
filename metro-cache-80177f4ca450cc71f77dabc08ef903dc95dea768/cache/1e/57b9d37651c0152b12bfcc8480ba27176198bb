@@ -21,9 +21,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _propTypes2 = _interopRequireDefault(_propTypes);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[2], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[2], "react-native");
 
     var _attributes = _require(_dependencyMap[3], "../lib/attributes");
 
@@ -83,7 +81,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'Path', _class.propTypes = _extends({}, _props.pathProps, {
+    }(_Shape3.default), _class.displayName = "Path", _class.propTypes = _extends({}, _props.pathProps, {
         d: _propTypes2.default.string.isRequired
     }), _initialiseProps = function _initialiseProps() {
         var _this3 = this;
@@ -96,10 +94,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }, _temp2);
 
     exports.default = _default;
-    var RNSVGPath = (0, _createReactNativeComponentClass2.default)('RNSVGPath', function () {
-        return {
-            validAttributes: _attributes.PathAttributes,
-            uiViewClassName: 'RNSVGPath'
-        };
+    var RNSVGPath = (0, _reactNative.requireNativeComponent)("RNSVGPath", null, {
+        nativeOnly: _attributes.PathAttributes
     });
 });

@@ -2,12 +2,12 @@ __d(function (global, _require, module, exports, _dependencyMap) {
   module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
     "__packager_asset": true,
     "httpServerLocation": "/assets/img",
-    "width": 89,
+    "width": 88,
     "height": 35,
     "scales": [1],
-    "hash": "91e9822acee9e7a2ae8eb6635cf22dbf",
+    "hash": "81e2c4a4597663b9fabc88b0f528b3f9",
     "name": "logo",
     "type": "png",
-    "fileHashes": ["91e9822acee9e7a2ae8eb6635cf22dbf"]
+    "fileHashes": ["81e2c4a4597663b9fabc88b0f528b3f9"]
   });
 });

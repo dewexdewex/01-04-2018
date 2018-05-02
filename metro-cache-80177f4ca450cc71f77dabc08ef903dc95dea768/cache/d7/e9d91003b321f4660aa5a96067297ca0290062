@@ -29,9 +29,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _extractGradient2 = _interopRequireDefault(_extractGradient);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[5], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[5], "react-native");
 
     var _attributes = _require(_dependencyMap[6], "../lib/attributes");
 
@@ -81,32 +79,29 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }, (0, _extractGradient2.default)(this.props), {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 28
+                        lineNumber: 29
                     }
                 }));
             }
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'LinearGradient', _class.propTypes = {
+    }(_react2.Component), _class.displayName = "LinearGradient", _class.propTypes = {
         x1: _props.numberProp.isRequired,
         x2: _props.numberProp.isRequired,
         y1: _props.numberProp.isRequired,
         y2: _props.numberProp.isRequired,
-        gradientUnits: _propTypes2.default.oneOf(['objectBoundingBox', 'userSpaceOnUse']),
+        gradientUnits: _propTypes2.default.oneOf(["objectBoundingBox", "userSpaceOnUse"]),
         id: _propTypes2.default.string.isRequired
     }, _class.defaultProps = {
-        x1: '0%',
-        y1: '0%',
-        x2: '100%',
-        y2: '0%'
+        x1: "0%",
+        y1: "0%",
+        x2: "100%",
+        y2: "0%"
     }, _temp));
 
     exports.default = _component;
-    var RNSVGLinearGradient = (0, _createReactNativeComponentClass2.default)('RNSVGLinearGradient', function () {
-        return {
-            validAttributes: _attributes.LinearGradientAttributes,
-            uiViewClassName: 'RNSVGLinearGradient'
-        };
+    var RNSVGLinearGradient = (0, _reactNative.requireNativeComponent)("RNSVGLinearGradient", null, {
+        nativeOnly: _attributes.LinearGradientAttributes
     });
 });

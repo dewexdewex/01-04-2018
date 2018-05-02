@@ -1,0 +1,13 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  module.exports = _require(_dependencyMap[0], "react-native/Libraries/Image/AssetRegistry").registerAsset({
+    "__packager_asset": true,
+    "httpServerLocation": "/assets/img",
+    "width": 103,
+    "height": 39,
+    "scales": [1],
+    "hash": "d03fbb32232a172741262fcd45747e58",
+    "name": "blkBx",
+    "type": "png",
+    "fileHashes": ["d03fbb32232a172741262fcd45747e58"]
+  });
+});

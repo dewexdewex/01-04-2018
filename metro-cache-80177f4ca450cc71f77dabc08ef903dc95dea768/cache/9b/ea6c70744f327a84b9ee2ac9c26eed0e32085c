@@ -12,7 +12,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             var value = props[key];
 
             if (props[key]) {
-                if (!extractedProps.responsible && key !== 'pointerEvents') {
+                if (!extractedProps.responsible && key !== "pointerEvents") {
                     extractedProps.responsible = true;
                 }
 

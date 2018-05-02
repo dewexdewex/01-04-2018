@@ -19,7 +19,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     stops[offset] = (0, _color2.default)(child.props.stopColor).alpha((0, _extractOpacity2.default)(child.props.stopOpacity));
                 }
             } else {
-                console.warn('`Gradient` elements only accept `Stop` elements as children');
+                console.warn("`Gradient` elements only accept `Stop` elements as children");
             }
         });
 
@@ -28,7 +28,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 stop: stop,
                 offset: offset
             };
-        }), 'offset');
+        }), "offset");
 
         var gradient = [];
         sorted.forEach(function (_ref) {

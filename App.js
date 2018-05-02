@@ -1,8 +1,9 @@
 import React from "react";
 import { StatusBar, Image, View } from "react-native";
-import { Content, Card, CardItem, Container, Header, Left, Body, Center, Right, Button, Icon, Title, Text, StyleProvider } from "native-base";
+import { Content, Card, CardItem, Container, Header, Left, Body, Center, Right, Button, Icon, Title, Text, StyleProvider, Subtitle } from "native-base";
 import getTheme from './native-base-theme/components';
 import material from './native-base-theme/variables/material';
+import { Col, Row, Grid } from 'react-native-easy-grid';
 import Expo from "expo";
 
 export default class App extends React.Component {
@@ -35,14 +36,13 @@ export default class App extends React.Component {
               </Button>
             </Left>
             <Body>
-              <Image source={require('./img/logo.png')} /> 
+              <Title>Transactions</Title>
+              <Subtitle>Current account</Subtitle>
             </Body>
-            <Body>
-              <Title>Mobile banking</Title>
-            </Body>
+            
             <Right>
               <Button transparent>
-                <Icon name='menu' />
+                <Icon name='more' />
               </Button>
             </Right>
           </Header>
@@ -57,6 +57,7 @@ export default class App extends React.Component {
                   <Text style={{paddingBottom: 10}}>
                     Helios is an Adobe AEM CMS global platform behind the Renault, Nissan and Infiniti brands' public facing responsive web sites.
                   </Text>
+                  <Image source={require('./img/logo.png')} />
                   <Text style={{paddingBottom: 10}}>
                     I was engaged by Renault to help drive clientside UX change on the Helios project, directly and with the Agency UX team, to improve the site's market ranking in benchmark customer surveys.
                   </Text>

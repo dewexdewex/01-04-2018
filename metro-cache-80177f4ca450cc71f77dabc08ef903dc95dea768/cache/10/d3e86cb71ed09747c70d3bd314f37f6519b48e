@@ -63,11 +63,11 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'Stop', _class.propTypes = {
+    }(_react2.Component), _class.displayName = "Stop", _class.propTypes = {
         stopColor: _propTypes2.default.string,
         stopOpacity: _props.numberProp
     }, _class.defaultProps = {
-        stopColor: '#000',
+        stopColor: "#000",
         stopOpacity: 1
     }, _temp));
 

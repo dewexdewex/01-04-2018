@@ -16,9 +16,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _react2 = _interopRequireDefault(_react);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[1], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[1], "react-native");
 
     var _attributes = _require(_dependencyMap[2], "../lib/attributes");
 
@@ -97,7 +95,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         }, true), {
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 26
+                                lineNumber: 37
                             }
                         }));
                     }
@@ -109,7 +107,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     {
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 41
+                            lineNumber: 71
                         }
                     },
                     children
@@ -118,13 +116,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'Span', _class.propTypes = _props2.textPathProps, _temp);
+    }(_Shape3.default), _class.displayName = "TextPath", _class.propTypes = _props2.textPathProps, _temp);
 
     exports.default = _default;
-    var RNSVGTextPath = (0, _createReactNativeComponentClass2.default)('RNSVGTextPath', function () {
-        return {
-            validAttributes: _attributes.TextPathAttributes,
-            uiViewClassName: 'RNSVGTextPath'
-        };
+    var RNSVGTextPath = (0, _reactNative.requireNativeComponent)("RNSVGTextPath", null, {
+        nativeOnly: _attributes.TextPathAttributes
     });
 });

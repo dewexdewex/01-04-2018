@@ -17,9 +17,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         _temp,
         _jsxFileName = "/Users/dewex/Documents/apps/D2M/01-04-2018/node_modules/react-native-svg/elements/Defs.js";
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[2], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[2], "react-native");
 
     function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -72,13 +70,10 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'Defs', _temp));
+    }(_react2.Component), _class.displayName = "Defs", _temp));
 
     exports.default = _component;
-    var RNSVGDefs = (0, _createReactNativeComponentClass2.default)('RNSVGDefs', function () {
-        return {
-            validAttributes: {},
-            uiViewClassName: 'RNSVGDefs'
-        };
+    var RNSVGDefs = (0, _reactNative.requireNativeComponent)("RNSVGDefs", null, {
+        nativeOnly: {}
     });
 });

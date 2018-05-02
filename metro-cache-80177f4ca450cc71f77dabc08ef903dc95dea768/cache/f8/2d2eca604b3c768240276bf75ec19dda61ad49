@@ -19,9 +19,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     _require(_dependencyMap[1], "./Path");
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[2], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[2], "react-native");
 
     var _props = _require(_dependencyMap[3], "../lib/props");
 
@@ -82,14 +80,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     ry: props.ry.toString(),
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 38
+                        lineNumber: 39
                     }
                 }));
             }
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'Rect', _class.propTypes = _extends({}, _props.pathProps, {
+    }(_Shape3.default), _class.displayName = "Rect", _class.propTypes = _extends({}, _props.pathProps, {
         x: _props.numberProp.isRequired,
         y: _props.numberProp.isRequired,
         width: _props.numberProp.isRequired,
@@ -114,10 +112,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }, _temp2);
 
     exports.default = _default;
-    var RNSVGRect = (0, _createReactNativeComponentClass2.default)('RNSVGRect', function () {
-        return {
-            validAttributes: _attributes.RectAttributes,
-            uiViewClassName: 'RNSVGRect'
-        };
+    var RNSVGRect = (0, _reactNative.requireNativeComponent)("RNSVGRect", null, {
+        nativeOnly: _attributes.RectAttributes
     });
 });

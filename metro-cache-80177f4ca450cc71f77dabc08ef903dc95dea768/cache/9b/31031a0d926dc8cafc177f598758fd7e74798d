@@ -65,7 +65,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var styles = _reactNative.StyleSheet.create({
         svg: {
-            backgroundColor: 'transparent'
+            backgroundColor: "transparent"
         }
     });
 
@@ -129,13 +129,18 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
                 if (width && height) {
                     dimensions = {
-                        width: +width,
-                        height: +height,
+                        width: width[width.length - 1] === "%" ? width : +width,
+                        height: height[height.length - 1] === "%" ? height : +height,
                         flex: 0
                     };
                 }
 
-                return _react3.default.createElement(NativeSvgView, _extends({}, props, (0, _extractViewBox2.default)({
+                var w = "" + width;
+                var h = "" + height;
+                return _react3.default.createElement(NativeSvgView, _extends({}, props, {
+                    bbWidth: w,
+                    bbHeight: h
+                }, (0, _extractViewBox2.default)({
                     viewBox: viewBox,
                     preserveAspectRatio: preserveAspectRatio
                 }), {
@@ -147,25 +152,28 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     }, dimensions],
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 83
+                        lineNumber: 94
                     }
                 }));
             }
         }]);
 
         return Svg;
-    }(_react2.Component), _class.displayName = 'Svg', _class.propTypes = _extends({}, _reactNative.ViewPropTypes, {
+    }(_react2.Component), _class.displayName = "Svg", _class.propTypes = _extends({}, _reactNative.ViewPropTypes, {
         opacity: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
         width: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
         height: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.number]),
         viewBox: _propTypes2.default.string,
         preserveAspectRatio: _propTypes2.default.string
     }), _class.defaultProps = {
-        preserveAspectRatio: 'xMidYMid meet'
+        preserveAspectRatio: "xMidYMid meet"
     }, _temp));
 
-    var NativeSvgView = (0, _reactNative.requireNativeComponent)('RNSVGSvgView', null, {
-        nativeOnly: _extends({}, _attributes.ViewBoxAttributes)
+    var NativeSvgView = (0, _reactNative.requireNativeComponent)("RNSVGSvgView", null, {
+        nativeOnly: _extends({}, _attributes.ViewBoxAttributes, {
+            width: true,
+            height: true
+        })
     });
     exports.default = Svg;
 });

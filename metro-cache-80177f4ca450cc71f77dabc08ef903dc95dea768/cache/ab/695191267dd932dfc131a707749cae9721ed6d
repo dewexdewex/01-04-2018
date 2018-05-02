@@ -21,9 +21,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _propTypes2 = _interopRequireDefault(_propTypes);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[2], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[2], "react-native");
 
     var _extractProps = _require(_dependencyMap[3], "../lib/extract/extractProps");
 
@@ -93,7 +91,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         height: props.height,
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 38
+                            lineNumber: 43
                         }
                     }),
                     props.children
@@ -102,7 +100,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'Use', _class.propTypes = _extends({
+    }(_Shape3.default), _class.displayName = "Use", _class.propTypes = _extends({
         href: _propTypes2.default.string.isRequired,
         width: _props.numberProp,
         height: _props.numberProp
@@ -117,10 +115,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }, _temp2);
 
     exports.default = _default;
-    var RNSVGUse = (0, _createReactNativeComponentClass2.default)('RNSVGUse', function () {
-        return {
-            validAttributes: _attributes.UseAttributes,
-            uiViewClassName: 'RNSVGUse'
-        };
+    var RNSVGUse = (0, _reactNative.requireNativeComponent)("RNSVGUse", null, {
+        nativeOnly: _attributes.UseAttributes
     });
 });

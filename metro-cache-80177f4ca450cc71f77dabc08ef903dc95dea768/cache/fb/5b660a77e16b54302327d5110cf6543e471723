@@ -17,9 +17,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _react2 = _interopRequireDefault(_react);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[1], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[1], "react-native");
 
     var _Shape2 = _require(_dependencyMap[2], "./Shape");
 
@@ -75,7 +73,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         },
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 24
+                            lineNumber: 25
                         }
                     }),
                     props.children
@@ -84,7 +82,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'G', _class.propTypes = _extends({}, _props.pathProps, _props.fontProps), _initialiseProps = function _initialiseProps() {
+    }(_Shape3.default), _class.displayName = "G", _class.propTypes = _extends({}, _props.pathProps, _props.fontProps), _initialiseProps = function _initialiseProps() {
         var _this3 = this;
 
         this.setNativeProps = function () {
@@ -95,10 +93,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }, _temp2);
 
     exports.default = _default;
-    var RNSVGGroup = (0, _createReactNativeComponentClass2.default)('RNSVGGroup', function () {
-        return {
-            validAttributes: _attributes.GroupAttributes,
-            uiViewClassName: 'RNSVGGroup'
-        };
+    var RNSVGGroup = (0, _reactNative.requireNativeComponent)("RNSVGGroup", null, {
+        nativeOnly: _attributes.GroupAttributes
     });
 });

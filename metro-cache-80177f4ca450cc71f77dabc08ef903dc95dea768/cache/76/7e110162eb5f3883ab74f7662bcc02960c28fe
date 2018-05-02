@@ -21,9 +21,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _propTypes2 = _interopRequireDefault(_propTypes);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[3], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[3], "react-native");
 
     var _attributes = _require(_dependencyMap[4], "../lib/attributes");
 
@@ -70,7 +68,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         name: this.props.id,
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 13
+                            lineNumber: 14
                         }
                     },
                     this.props.children
@@ -79,15 +77,12 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'ClipPath', _class.propTypes = {
+    }(_react2.Component), _class.displayName = "ClipPath", _class.propTypes = {
         id: _propTypes2.default.string.isRequired
     }, _temp));
 
     exports.default = _component;
-    var RNSVGClipPath = (0, _createReactNativeComponentClass2.default)('RNSVGClipPath', function () {
-        return {
-            validAttributes: _attributes.ClipPathAttributes,
-            uiViewClassName: 'RNSVGClipPath'
-        };
+    var RNSVGClipPath = (0, _reactNative.requireNativeComponent)("RNSVGClipPath", null, {
+        nativeOnly: _attributes.ClipPathAttributes
     });
 });

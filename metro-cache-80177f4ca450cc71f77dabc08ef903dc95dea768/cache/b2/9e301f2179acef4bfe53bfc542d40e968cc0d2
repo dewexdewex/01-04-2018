@@ -22,7 +22,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         rotate = (0, _extractLengthList2.default)(rotate);
         var content = null;
 
-        if (typeof children === 'string' || typeof children === 'number') {
+        if (typeof children === "string" || typeof children === "number") {
             var childrenString = children.toString();
 
             if (container) {
@@ -31,7 +31,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     {
                         __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 119
+                            lineNumber: 118
                         }
                     },
                     childrenString
@@ -42,13 +42,13 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             }
         } else if (_react.Children.count(children) > 1 || Array.isArray(children)) {
             children = _react.Children.map(children, function (child) {
-                if (typeof child === 'string' || typeof child === 'number') {
+                if (typeof child === "string" || typeof child === "number") {
                     return _react2.default.createElement(
                         _TSpan2.default,
                         {
                             __source: {
                                 fileName: _jsxFileName,
-                                lineNumber: 127
+                                lineNumber: 126
                             }
                         },
                         child.toString()
@@ -100,7 +100,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     var cachedFontObjectsFromString = {};
 
     function extractSingleFontFamily(fontFamilyString) {
-        return fontFamilyString ? fontFamilyString.split(commaReg)[0].replace(fontFamilyPrefix, '').replace(fontFamilySuffix, '') : null;
+        return fontFamilyString ? fontFamilyString.split(commaReg)[0].replace(fontFamilyPrefix, "").replace(fontFamilySuffix, "") : null;
     }
 
     function parseFontString(font) {
@@ -115,11 +115,11 @@ __d(function (global, _require, module, exports, _dependencyMap) {
         }
 
         var fontFamily = extractSingleFontFamily(match[3]);
-        var fontSize = match[2] || '12';
+        var fontSize = match[2] || "12";
         var isBold = /bold/.exec(match[1]);
         var isItalic = /italic/.exec(match[1]);
-        var fontWeight = isBold ? 'bold' : 'normal';
-        var fontStyle = isItalic ? 'italic' : 'normal';
+        var fontWeight = isBold ? "bold" : "normal";
+        var fontStyle = isItalic ? "italic" : "normal";
         cachedFontObjectsFromString[font] = {
             fontSize: fontSize,
             fontFamily: fontFamily,
@@ -146,7 +146,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             fontFamily = props.fontFamily,
             font = props.font;
         fontFamily = extractSingleFontFamily(fontFamily);
-        fontSize = fontSize ? '' + fontSize : null;
+        fontSize = fontSize ? "" + fontSize : null;
 
         var ownedFont = _lodash2.default.pickBy({
             fontData: fontData,
@@ -167,7 +167,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             return !_lodash2.default.isNil(prop);
         });
 
-        if (typeof font === 'string') {
+        if (typeof font === "string") {
             font = parseFontString(font);
         }
 

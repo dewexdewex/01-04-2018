@@ -84,7 +84,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 var points = this.props.points;
 
                 if (Array.isArray(points)) {
-                    points = points.join(',');
+                    points = points.join(",");
                 }
 
                 return _react3.default.createElement(_Path2.default, _extends({
@@ -95,17 +95,17 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     d: "M" + (0, _extractPolyPoints2.default)(points) + "z",
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 29
+                        lineNumber: 31
                     }
                 }));
             }
         }]);
 
         return _class;
-    }(_react2.Component), _class.displayName = 'Polygon', _class.propTypes = _extends({}, _props.pathProps, {
+    }(_react2.Component), _class.displayName = "Polygon", _class.propTypes = _extends({}, _props.pathProps, {
         points: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.array]).isRequired
     }), _class.defaultProps = {
-        points: ''
+        points: ""
     }, _initialiseProps = function _initialiseProps() {
         var _this3 = this;
 

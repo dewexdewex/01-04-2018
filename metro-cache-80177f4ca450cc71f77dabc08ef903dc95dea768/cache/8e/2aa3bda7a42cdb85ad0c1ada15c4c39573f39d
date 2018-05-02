@@ -42,7 +42,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     function appendTransform(transform) {
         if (transform) {
-            if (typeof transform === 'string') {
+            if (typeof transform === "string") {
                 try {
                     var _transformParser$pars = transformParser.parse(transform),
                         _transformParser$pars2 = _slicedToArray(_transformParser$pars, 6),
@@ -97,7 +97,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }
 
     function props2transform(props) {
-        if (props && typeof props === 'string') {
+        if (props && typeof props === "string") {
             return props;
         }
 

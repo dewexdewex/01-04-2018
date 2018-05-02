@@ -141,7 +141,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     tabBarActiveTextColor: "#fff",
     tabActiveBgColor: "#3F51B5",
     toolbarBtnColor: "#fff",
-    toolbarDefaultBg: "#3F51B5",
+    toolbarDefaultBg: "#666666",
     toolbarHeight: 56,
     toolbarSearchIconSize: 23,
     toolbarInputColor: "#fff",

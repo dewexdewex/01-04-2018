@@ -5,6 +5,6 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     exports.default = function (opacity) {
         var value = +opacity;
-        return typeof value !== 'number' || isNaN(value) ? 1 : value;
+        return typeof value !== "number" || isNaN(value) ? 1 : value;
     };
 });

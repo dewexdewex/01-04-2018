@@ -10,7 +10,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             }
         });
         return {
-            fill: (0, _extractBrush2.default)(props.fill || '#000'),
+            fill: (0, _extractBrush2.default)(props.fill || "#000"),
             fillOpacity: (0, _extractOpacity2.default)(props.fillOpacity),
             fillRule: fillRules[props.fillRule] === 0 ? 0 : 1
         };

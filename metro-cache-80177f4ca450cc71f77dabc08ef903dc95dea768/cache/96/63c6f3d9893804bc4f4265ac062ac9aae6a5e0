@@ -21,9 +21,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
     var _propTypes2 = _interopRequireDefault(_propTypes);
 
-    var _createReactNativeComponentClass = _require(_dependencyMap[2], "../lib/createReactNativeComponentClass");
-
-    var _createReactNativeComponentClass2 = _interopRequireDefault(_createReactNativeComponentClass);
+    var _reactNative = _require(_dependencyMap[2], "react-native");
 
     var _extractText = _require(_dependencyMap[3], "../lib/extract/extractText");
 
@@ -96,14 +94,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }), this), (0, _extractText2.default)(props, true), {
                     __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 41
+                        lineNumber: 42
                     }
                 }));
             }
         }]);
 
         return _default;
-    }(_Shape3.default), _class.displayName = 'Text', _class.propTypes = _props.textProps, _class.childContextTypes = {
+    }(_Shape3.default), _class.displayName = "Text", _class.propTypes = _props.textProps, _class.childContextTypes = {
         isInAParentText: _propTypes2.default.bool
     }, _initialiseProps = function _initialiseProps() {
         var _this3 = this;
@@ -116,10 +114,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
     }, _temp2);
 
     exports.default = _default;
-    var RNSVGText = (0, _createReactNativeComponentClass2.default)('RNSVGText', function () {
-        return {
-            validAttributes: _attributes.TextAttributes,
-            uiViewClassName: 'RNSVGText'
-        };
+    var RNSVGText = (0, _reactNative.requireNativeComponent)("RNSVGText", null, {
+        nativeOnly: _attributes.TextAttributes
     });
 });

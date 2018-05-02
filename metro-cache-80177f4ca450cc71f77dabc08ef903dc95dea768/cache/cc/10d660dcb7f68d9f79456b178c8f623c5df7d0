@@ -27,7 +27,9 @@ __d(function (global, _require, module, exports, _dependencyMap) {
 
   var _material2 = _interopRequireDefault(_material);
 
-  var _expo = _require(_dependencyMap[6], "expo");
+  var _reactNativeEasyGrid = _require(_dependencyMap[6], "react-native-easy-grid");
+
+  var _expo = _require(_dependencyMap[7], "expo");
 
   var _expo2 = _interopRequireDefault(_expo);
 
@@ -81,9 +83,9 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               case 0:
                 _context.next = 2;
                 return regeneratorRuntime.awrap(_expo2.default.Font.loadAsync({
-                  Roboto: _require(_dependencyMap[7], "native-base/Fonts/Roboto.ttf"),
-                  Roboto_medium: _require(_dependencyMap[8], "native-base/Fonts/Roboto_medium.ttf"),
-                  Ionicons: _require(_dependencyMap[9], "@expo/vector-icons/fonts/Ionicons.ttf")
+                  Roboto: _require(_dependencyMap[8], "native-base/Fonts/Roboto.ttf"),
+                  Roboto_medium: _require(_dependencyMap[9], "native-base/Fonts/Roboto_medium.ttf"),
+                  Ionicons: _require(_dependencyMap[10], "@expo/vector-icons/fonts/Ionicons.ttf")
                 }));
 
               case 2:
@@ -105,7 +107,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
           return _react3.default.createElement(_expo2.default.AppLoading, {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 25
+              lineNumber: 26
             }
           });
         }
@@ -116,7 +118,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
             style: (0, _components3.default)(_material2.default),
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 28
+              lineNumber: 29
             }
           },
           _react3.default.createElement(
@@ -127,14 +129,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               },
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 29
+                lineNumber: 30
               }
             },
             _react3.default.createElement(_reactNative.StatusBar, {
               hidden: false,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 30
+                lineNumber: 31
               }
             }),
             _react3.default.createElement(
@@ -142,7 +144,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 31
+                  lineNumber: 32
                 }
               },
               _react3.default.createElement(
@@ -150,7 +152,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 32
+                    lineNumber: 33
                   }
                 },
                 _react3.default.createElement(
@@ -159,14 +161,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     transparent: true,
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 33
+                      lineNumber: 34
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, {
                     name: "arrow-back",
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 34
+                      lineNumber: 35
                     }
                   })
                 )
@@ -176,23 +178,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 {
                   __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 37
-                  }
-                },
-                _react3.default.createElement(_reactNative.Image, {
-                  source: _require(_dependencyMap[10], './img/logo.png'),
-                  __source: {
-                    fileName: _jsxFileName,
                     lineNumber: 38
-                  }
-                })
-              ),
-              _react3.default.createElement(
-                _nativeBase.Body,
-                {
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 40
                   }
                 },
                 _react3.default.createElement(
@@ -200,10 +186,20 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                   {
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 41
+                      lineNumber: 39
                     }
                   },
-                  "Mobile banking"
+                  "Transactions"
+                ),
+                _react3.default.createElement(
+                  _nativeBase.Subtitle,
+                  {
+                    __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 40
+                    }
+                  },
+                  "Current account"
                 )
               ),
               _react3.default.createElement(
@@ -224,7 +220,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     }
                   },
                   _react3.default.createElement(_nativeBase.Icon, {
-                    name: "menu",
+                    name: "more",
                     __source: {
                       fileName: _jsxFileName,
                       lineNumber: 45
@@ -301,6 +297,13 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                       },
                       "Helios is an Adobe AEM CMS global platform behind the Renault, Nissan and Infiniti brands' public facing responsive web sites."
                     ),
+                    _react3.default.createElement(_reactNative.Image, {
+                      source: _require(_dependencyMap[11], './img/logo.png'),
+                      __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 60
+                      }
+                    }),
                     _react3.default.createElement(
                       _nativeBase.Text,
                       {
@@ -309,7 +312,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                         },
                         __source: {
                           fileName: _jsxFileName,
-                          lineNumber: 60
+                          lineNumber: 61
                         }
                       },
                       "I was engaged by Renault to help drive clientside UX change on the Helios project, directly and with the Agency UX team, to improve the site's market ranking in benchmark customer surveys."
@@ -322,7 +325,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     footer: true,
                     __source: {
                       fileName: _jsxFileName,
-                      lineNumber: 65
+                      lineNumber: 66
                     }
                   },
                   _react3.default.createElement(
@@ -330,7 +333,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     {
                       __source: {
                         fileName: _jsxFileName,
-                        lineNumber: 66
+                        lineNumber: 67
                       }
                     },
                     "Yours, David"

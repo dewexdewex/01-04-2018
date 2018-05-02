@@ -1,0 +1,61 @@
+__d(function (global, _require, module, exports, _dependencyMap) {
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+  var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[typeof Symbol === "function" ? Symbol.iterator : "@@iterator"](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if ((typeof Symbol === "function" ? Symbol.iterator : "@@iterator") in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+
+  function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+  var camelCase = exports.camelCase = function camelCase(value) {
+    return value.replace(/-([a-z])/g, function (g) {
+      return g[1].toUpperCase();
+    });
+  };
+
+  var camelCaseNodeName = exports.camelCaseNodeName = function camelCaseNodeName(_ref) {
+    var nodeName = _ref.nodeName,
+        nodeValue = _ref.nodeValue;
+    return {
+      nodeName: camelCase(nodeName),
+      nodeValue: nodeValue
+    };
+  };
+
+  var removePixelsFromNodeValue = exports.removePixelsFromNodeValue = function removePixelsFromNodeValue(_ref2) {
+    var nodeName = _ref2.nodeName,
+        nodeValue = _ref2.nodeValue;
+    return {
+      nodeName: nodeName,
+      nodeValue: nodeValue.replace('px', '')
+    };
+  };
+
+  var transformStyle = exports.transformStyle = function transformStyle(_ref3) {
+    var nodeName = _ref3.nodeName,
+        nodeValue = _ref3.nodeValue,
+        fillProp = _ref3.fillProp;
+
+    if (nodeName === 'style') {
+      return nodeValue.split(';').reduce(function (acc, attribute) {
+        var _attribute$split = attribute.split(':'),
+            _attribute$split2 = _slicedToArray(_attribute$split, 2),
+            property = _attribute$split2[0],
+            value = _attribute$split2[1];
+
+        if (property == "") return acc;else return _extends({}, acc, _defineProperty({}, camelCase(property), fillProp && property === 'fill' ? fillProp : value));
+      }, {});
+    }
+
+    return null;
+  };
+
+  var getEnabledAttributes = exports.getEnabledAttributes = function getEnabledAttributes(enabledAttributes) {
+    return function (_ref4) {
+      var nodeName = _ref4.nodeName;
+      return enabledAttributes.includes(camelCase(nodeName));
+    };
+  };
+});

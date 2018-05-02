@@ -76,13 +76,14 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               _nativeBase.Button,
               {
                 vertical: true,
+                active: true,
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 9
                 }
               },
               _react3.default.createElement(_nativeBase.Icon, {
-                name: "home",
+                name: "ios-home",
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 10
@@ -96,7 +97,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     lineNumber: 11
                   }
                 },
-                "Home"
+                "Accounts"
               )
             ),
             _react3.default.createElement(
@@ -109,7 +110,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }
               },
               _react3.default.createElement(_nativeBase.Icon, {
-                name: "camera",
+                name: "ios-swap",
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 14
@@ -123,14 +124,13 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     lineNumber: 15
                   }
                 },
-                "Camera"
+                "Payments"
               )
             ),
             _react3.default.createElement(
               _nativeBase.Button,
               {
                 vertical: true,
-                active: true,
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 17
@@ -138,7 +138,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               },
               _react3.default.createElement(_nativeBase.Icon, {
                 active: true,
-                name: "navigate",
+                name: "ios-card",
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 18
@@ -152,7 +152,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     lineNumber: 19
                   }
                 },
-                "Navigate"
+                "Spending"
               )
             ),
             _react3.default.createElement(
@@ -165,7 +165,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                 }
               },
               _react3.default.createElement(_nativeBase.Icon, {
-                name: "person",
+                name: "ios-more",
                 __source: {
                   fileName: _jsxFileName,
                   lineNumber: 22
@@ -179,7 +179,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     lineNumber: 23
                   }
                 },
-                "Contact"
+                "More"
               )
             )
           )

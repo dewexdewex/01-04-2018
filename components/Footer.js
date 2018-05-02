@@ -6,21 +6,21 @@ export default class MyFooter extends React.Component {
     return (
       <Footer>
         <FooterTab>
-          <Button vertical>
-            <Icon name="home" />
-            <Text>Home</Text>
-          </Button>
-          <Button vertical>
-            <Icon name="camera" />
-            <Text>Camera</Text>
-          </Button>
           <Button vertical active>
-            <Icon active name="navigate" />
-            <Text>Navigate</Text>
+            <Icon name="ios-home" />
+            <Text>Accounts</Text>
           </Button>
           <Button vertical>
-            <Icon name="person" />
-            <Text>Contact</Text>
+            <Icon name="ios-swap" />
+            <Text>Payments</Text>
+          </Button>
+          <Button vertical>
+            <Icon active name="ios-card" />
+            <Text>Spending</Text>
+          </Button>
+          <Button vertical>
+            <Icon name="ios-more" />
+            <Text>More</Text>
           </Button>
         </FooterTab>
       </Footer> 

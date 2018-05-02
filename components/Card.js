@@ -11,10 +11,7 @@ export default class MyCard extends React.Component {
         <CardItem>
           <Body>
             <Text style={{paddingBottom: 10}}>
-              Helios is an Adobe AEM CMS global platform behind the Renault, Nissan and Infiniti brands' public facing responsive web sites.
-            </Text> 
-            <Text style={{paddingBottom: 10}}>
-              I was engaged by Renault to help drive clientside UX change on the Helios project, directly and with the Agency UX team, to improve the site's market ranking in benchmark customer surveys.
+              Lorem ipsum dolor sunt.
             </Text>
           </Body>
         </CardItem>

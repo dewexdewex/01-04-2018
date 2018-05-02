@@ -111,20 +111,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
                     lineNumber: 13
                   }
                 },
-                "Helios is an Adobe AEM CMS global platform behind the Renault, Nissan and Infiniti brands' public facing responsive web sites."
-              ),
-              _react3.default.createElement(
-                _nativeBase.Text,
-                {
-                  style: {
-                    paddingBottom: 10
-                  },
-                  __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 16
-                  }
-                },
-                "I was engaged by Renault to help drive clientside UX change on the Helios project, directly and with the Agency UX team, to improve the site's market ranking in benchmark customer surveys."
+                "Lorem ipsum dolor sunt."
               )
             )
           ),
@@ -134,7 +121,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               footer: true,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 18
               }
             },
             _react3.default.createElement(
@@ -142,7 +129,7 @@ __d(function (global, _require, module, exports, _dependencyMap) {
               {
                 __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 22
+                  lineNumber: 19
                 }
               },
               "Yours, David"

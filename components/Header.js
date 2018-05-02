@@ -7,16 +7,16 @@ export default class MyHeader extends React.Component {
       <Header>
         <Left>
           <Button transparent>
-            <Icon name='arrow-back' />
+            <Icon name='ios-person' />
           </Button>
         </Left>
         <Body>
-          <Title>Transactions</Title>
-          <Subtitle>Current account</Subtitle>
+          <Title>David Wiles</Title>
+          <Subtitle>Accounts</Subtitle>
         </Body>            
         <Right>
           <Button transparent>
-            <Icon name='more' />
+            <Icon name='ios-notifications' />
           </Button>
         </Right>
       </Header> 
